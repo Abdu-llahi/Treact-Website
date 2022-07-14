@@ -96,6 +96,11 @@ a {
     color: #F7FAFC;
 }
 
+input::placeholder {
+    color: #A0AEC0;
+    font-size: 16px;
+}
+
 /* 
 
 HEADING
@@ -345,7 +350,7 @@ Get Started
 
 .steps--container {
     display: flex;
-    padding: 96px 0px;
+    padding: 56px 0px;
 }
 
 .steps__img {
@@ -413,4 +418,140 @@ Get Started
     font-size: 14px;
     margin-top: 12px;
     width: 320px;
+}
+
+/*
+
+Values
+
+ */
+
+ .value--container{
+    padding: 72px 0px;
+    display: flex;
+}
+
+.value--img {
+    width: 100%;
+}
+
+.value--1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.value--2 {
+    display: flex;
+    width: 50%;
+}
+
+ .value--title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.value--heading {
+    font-size: 54px;
+    margin-top: 16px;
+    color: #243E63;
+    font-weight: 900;
+}
+
+.value--para {
+    color: #7C8BA1;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 16px 0px 32px 0px;
+}
+
+.value--link {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #6415FF;
+    border-radius: 50px;
+    padding: 16px 24px;
+    color: #F7FAFC;
+}
+
+.principle__affordable--image {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.principle__professionalism--image {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.principles__list {
+    display: flex;
+}
+
+.principle__affordable--image-container {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.principle__professionalis--image-container {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.fa-suitcase {
+    padding: 10px;
+    border-radius: 50px;
+    color: rgba(155,44,44);
+    background-color: #FEB2B2;
+}
+
+.fa-dollar-sign {
+    color: rgba(39,103,73);
+    padding: 10px 13px;
+    border-radius: 50px;
+    background-color: #9AE6B4;
+}
+
+.principle__professionalism {
+    font-size: 20px;
+    color: #243E63;
+    font-weight: 700;
+    margin: 6px 0px 0px 12px;
+}
+
+.principle__affordable {
+    font-size: 20px;
+    color: #243E63;
+    font-weight: 700;
+    margin: 6px 0px 0px 12px;
+}
+
+.principle__para {
+    color: #7C8BA1;
+    font-size: 16px;
+    width: 260px;
+    margin-bottom: 40px;
+}
+
+/*
+
+PLANS
+
+ */
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan__container {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
 }
