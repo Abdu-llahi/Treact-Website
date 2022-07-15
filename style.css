@@ -453,7 +453,7 @@ Values
 }
 
 .value--heading {
-    font-size: 54px;
+    font-size: 52px;
     margin-top: 16px;
     color: #243E63;
     font-weight: 900;
@@ -548,10 +548,224 @@ PLANS
 .plans {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .plan__container {
-    width: calc(100%/3);
+    width: calc(90%/3);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0px 4px;
+    position: relative;
+}
+
+.border__top--1 {
+    position: absolute;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 8px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.border__top--2 {
+    position: absolute;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height: 8px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.plan__container--middle {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    background-clip: content-box;
+    border-radius: 10px;
+}
+
+.part--1, .part--2, .part--3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-top: solid 1px #A0AEC0;
+    padding: 48px 32px;
+}
+
+.button__1, .button__2, .button__3 {
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 16px 56px;
+}
+
+.plan__3--info {
+    display: flex;
+    justify-content: center;
+}
+
+.button__1 {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    color: #F7FAFC;
+    font-weight: 700;
+}
+
+.button__2 {
+    background-color: #F7FAFC;
+    opacity: 1;
+    color: #6415FF;
+    font-weight: 700;
+}
+
+.button__3 {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    color: #F7FAFC;
+    font-weight: 700;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.plan__name, .plan__main--feature {
+    font-size: 20px;
+    color: #1A202C;
+    font-weight: 700;
+}
+
+.plan__price {
+    font-weight: 800;
+    font-size: 48px;
+    color: #1A202C;
+    margin: 4px 0px;
+}
+
+.plan__duration {
+    letter-spacing: 1.5px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #A0AEC0;
+    font-weight: 700;
+}
+
+.plan__name--2, .plan__main--feature--2 {
+    font-size: 20px;
+    color: #F7FAFC;
+    font-weight: 700;
+}
+
+.plan__price--2 {
+    font-size: 48px;
+    color: #F7FAFC;
+    margin: 4px 0px;
+    font-weight: 700;
+}
+
+.plan__duration--2 {
+    letter-spacing: 1.5px;
+    margin-top: 16px;
+    color: #E3E7EB;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.plan__feature--2 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #E3E7EB;
+    font-weight: 500;
+}
+
+/*
+x
+TESTIMONIALS
+
+ */
+
+.testimonials {
+    display: flex;
+}
+
+.testimonial__img {
+    display: flex;
+    width: 100%;
+}
+
+.testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 64px;
+}
+
+.testimonial__img {
+    max-width: 100%;
+}
+
+.review__rating--stars {
+    margin-bottom: 24px;
+    color: #fabf2a;
+}
+
+.review__para {
+    color: #4A5568;
+    font-size: 16px;
+    margin: 16px 0px 40px 0px;
+    font-weight: 500;
+}
+
+.review__profile {
+    display: flex;
+}
+
+.review__profile--img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.review__heading{
+    color: #243E63;
+    margin-bottom: 8px;
+}
+
+.review--para {
+    color: #7C8BA1;
+    font-weight: 500;
+}
+
+.review__highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.review__button {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.review__profile--container {
+    display: flex;
+}
+
+.review__button--left, .review__button--right {
+    position: relative;
+    padding: 12px 16px;
+    border-radius: 50%; 
+    background-color: #EDF2F7;
+}
+
+.fa-arrow-left, .fa-arrow-right{
+    color: #6415FF;
 }
