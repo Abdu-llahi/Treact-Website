@@ -685,7 +685,7 @@ PLANS
 }
 
 /*
-x
+
 TESTIMONIALS
 
  */
@@ -727,7 +727,7 @@ TESTIMONIALS
 }
 
 .review__profile--img {
-    width: 15%;
+    width: 18%;
     border-radius: 50%;
 }
 
@@ -768,4 +768,130 @@ TESTIMONIALS
 
 .fa-arrow-left, .fa-arrow-right{
     color: #6415FF;
+}
+
+
+/*
+
+LIST MENU
+
+ */
+
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #edf2f7;
+    color: #2d3748;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 18px 32px 18px 32px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #dde4ea;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.question {
+    width: 900px;
+}
+
+.question__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.developer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6415FF;
+    width: 100%;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.developer__description {
+    font-size: 36px;
+    color: #F7FAFC;
+    display: flex;
+    width: 50%;
+}
+
+.contact__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.btn__link, .btn__contact {
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    margin-right: 24px;
+    font-weight: 700;
+}
+
+.btn__link {
+    background-color: #F56565;
+}
+
+.btn__link:hover {
+    background-color: #f54c4c;
+}
+
+.btn__contact:hover {
+    background-color: #F7FAFC;
+    color: #6415FF;
+}
+
+.btn__contact {
+    border: 1px solid #A0AEC0;
+}
+
+
+/* 
+
+FOOTER
+
+*/
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+    align-items: center;
 }
