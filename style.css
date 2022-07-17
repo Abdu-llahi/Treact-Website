@@ -13,9 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.body__container {
     padding: 32px 80px;
 }
+
 
 .row {
     width: 100%;
@@ -35,6 +36,29 @@ p {
 NAVIGATION 
 
 */
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    width: 0%;
+    bottom: -3px;
+    right: 0px;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect:hover:after {
+    width: 100%;
+    left: 0px;
+
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+}
 
 .logo__container {
     position: relative;
@@ -65,11 +89,6 @@ nav {
 }
 
 .nav__link--list {
-    display: flex;
-}
-
-a {
-    text-decoration: none;
     display: flex;
 }
 
@@ -779,6 +798,7 @@ LIST MENU
 
 
 .accordion {
+    cursor: not-allowed;
     display: flex;
     justify-content: space-between;
     background-color: #edf2f7;
@@ -884,14 +904,91 @@ FOOTER
 
 */
 
+.footer {
+
+}   
+
+.container__footer{ 
+    background-color: #6415FF;
+    padding: 96px 36px 16px 36px;
+}
+
 .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding: 24px 0px 56px 0px;
 }
 
 .footer__main {
     display: flex;
     flex-direction: column;
-    width: calc(100%/5);
     align-items: center;
+    width: 20%;
+}
+
+.footer__link--1 {
+    margin-top: 16px;
+    color: #F7FAFC;
+    font-size: 14px;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 24px 72px 56px 72px;
+    width: 100%;
+}
+
+.footer__logo--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo__bottom--description{
+    display: flex;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    background-color: #F7FAFC;
+    color: #1A202C;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+.footer__divider {
+    width: 100%;
+    border-bottom: 2px solid #742DFF;
+    padding: 24px;
+}
+
+.footer__logo {
+    width: 48px;
+}
+
+.logo__bottom--description {
+    color: #CBD5E0;
+    font-size: 16px;
+}
+
+.logo__bottom--position {
+    font-size: 20px;
+    color: #F7FAFC;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.footer__title {
+    color: #F7FAFC;
+    font-size: 16pxs;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
